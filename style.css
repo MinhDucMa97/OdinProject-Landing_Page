@@ -3,10 +3,17 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*First section content - including header & first content*/
 
 .first-section {
-    background-color: #1f2937;
+    background-image: url(image/backgroundimage.jpg);
+    background-size: cover;
+    background-position: center;
+   
 }
 
 .header {
@@ -14,7 +21,12 @@
     justify-content: space-around;
     font-size: 24px;
     color: #F9FAF8  
+}
 
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
 
 .left-section {
@@ -24,10 +36,11 @@
 }
 
 .left-section .logo img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
+    margin-top: 10px;
 }
 
 .right-section {
@@ -38,7 +51,7 @@
 
 .right-section ul {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 ul li {
@@ -58,7 +71,7 @@ ul li {
 .first-content .first-left-content {
     display: flex;
     flex-direction: column;
-    flex-basis: 400px;
+    flex-basis: 600px;
 }
 
 .first-content .first-left-content .main-text {
@@ -84,13 +97,16 @@ ul li {
 }
 
 .first-right-content img {
-    width: 400px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
 }
 
 /*Second section*/
 .second-section {
     padding-bottom: 100px;
+    background-image: url(image/ocean.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .information {
@@ -103,9 +119,9 @@ ul li {
 
 .card-container {
     display: flex;
-    gap: 20px;
+    gap: 100px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
 }
 
@@ -122,7 +138,7 @@ ul li {
 
 .card img {
     width: 150px;
-    height: 150px;
+    height: 200px;
     object-fit: fill;
     overflow: hidden;
     border: 4px solid #3882f6;
@@ -163,10 +179,55 @@ ul li {
 }
 
 /*Fourth Section*/
-
 .fourth-section {
-
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
+
+.fourth-section .fourth-content-container {
+    display: flex;
+    gap: 150px;
+    border: 2px none;
+    border-radius: 5px;
+    padding: 40px 100px;
+    background-color: #3882f6;
+}
+
+.fourth-content-container .bigger-text {
+    font-size: 20   px;
+    color: white;
+    font-weight: bold;
+}
+
+.fourth-content-container .smaller-text {
+    color: whitesmoke;
+    font-weight:100;
+}
+
+.fourth-content-container .sign-up-button {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: #3882f6;
+    padding: 0 30px;
+}
+
+/*Footer*/
+.footer {
+    background-color:#1f2937 ;
+    text-align: center;
+    color: white;
+}
+
+.footer-text {
+    padding: 30px;
+}
+
+
 
 
 
